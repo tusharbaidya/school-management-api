@@ -74,7 +74,7 @@ const setup = async () => {
       "\n🎉 Database setup complete! You can now start the server with: npm start\n",
     );
   } catch (error) {
-    console.error("❌ Setup failed:", error.message);
+    console.error("❌ Setup failed:", error);
     process.exit(1);
   } finally {
     if (connection) await connection.end();
